@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Employee Show</title>
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script>
+        $(document).ready( function(){
+            $("#getemp").click(function () {
+                $.ajax({
+                    type: 'GET',
+                    url: 'api/Employees',
+                    dataType: 'json',
+                    success: function(data){
+                        //$("getemp").empty();
+                        $("#emplist").empty();
+                        $.each(data,function(index,val){
+                            $("#emplist").append('<li class="list-group-item">' + val.EmployeeName + '</li>');
+                        });
+                    }
+                });
+            })
+            $("#clear").click(function () {
+                $("#emplist").empty();
+            })
+        })
+    </script>
+</head>
+<body>
+    <input class="btn btn-primary" id="getemp" type="button" value="Get Employee List" />
+    <input class="btn btn-primary" id="clear" value="Clear" type="button" />
+    <ul class="list-group" id="emplist"></ul>
+</body>
+</html>

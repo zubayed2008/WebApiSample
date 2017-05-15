@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeServices", "EmployeeServices\EmployeeServices.csproj", "{783F54BB-E623-4E04-BA59-318A836E6537}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeDataAccess", "EmployeeDataAccess\EmployeeDataAccess.csproj", "{F6BC54F1-25C2-4680-A900-4DFBC88767AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{783F54BB-E623-4E04-BA59-318A836E6537}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{783F54BB-E623-4E04-BA59-318A836E6537}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{783F54BB-E623-4E04-BA59-318A836E6537}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{783F54BB-E623-4E04-BA59-318A836E6537}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6BC54F1-25C2-4680-A900-4DFBC88767AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6BC54F1-25C2-4680-A900-4DFBC88767AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6BC54F1-25C2-4680-A900-4DFBC88767AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6BC54F1-25C2-4680-A900-4DFBC88767AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
